@@ -1,0 +1,224 @@
+/*----------- GENERAL ----------- */
+/*----------- GENERAL ----------- */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*----------- MARCO FARRAFOS ----------- */
+.marcoparraf {
+    border:10px solid rgb(206, 113, 52);
+    padding:20px;
+    text-align: justify;
+    }
+
+/*----------- CENTRAR TEXTO ----------- */
+.center {
+    text-align: center;
+  }
+
+/*----------- INDEX ----------- */
+/*----------- INDEX ----------- */
+
+.container_index {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(5, 10, 5, 0.80), rgba(90, 40, 90, 0.80)), url(https://images2.alphacoders.com/200/200262.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.navbar {
+    width: 80%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 130px;
+    cursor: pointer;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: Roboto, "sans-serif";
+    font-size: 1.2rem;
+}
+
+.navbar ul li::before {
+    content: "";
+    height: 3px;
+    width: 0%;
+    background: rgb(255, 255, 255);
+    position: absolute;
+    left: 0;
+    bottom: -12px;
+    transition: 0.4s ease-out;
+}
+
+.navbar ul li:hover::before {
+    width: 100%;
+}
+
+.body_index {
+        background-color: rgb(255, 0, 0);
+      }
+      
+      .h1_index {
+          font-size: 350%;
+          color: rgb(255, 255, 255);
+          text-align: center;
+        }
+
+        .h2_index {
+          font-size: 250%;
+          color: rgb(255, 255, 255);
+          text-align: center;
+        }
+
+      .p_index {
+        color: rgb(255, 255, 255);
+      }
+
+      .bbb {
+        background: rgb(238,174,202);
+        background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+      }
+/*----------- CV ----------- */
+/*----------- CV ----------- */
+.fondo_cv {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(5, 10, 5, 0.80), rgba(90, 40, 90, 0.80)), url(https://us.123rf.com/450wm/seamartini/seamartini1610/seamartini161000471/64252869-utensilios-de-cocina-y-electrodomésticos-aislados-bocetos-cocinar-el-crisol-cuchillo-tenedor-sartén-cuch.jpg?ver=6);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.btn_cv {
+    text-decoration:none;
+    font-weight: 600;
+    font-size: 20px;
+    color:#ff3232;
+    padding-top:5px;
+    padding-bottom:5px;
+    padding-left:15px;
+    padding-right:15px;
+    background-color:#ffffff;
+    border-color: #ff3232;
+    border-width: 3px;
+    border-style: solid;
+    border-radius:none;
+}
+
+/*----------- BARRA NAVEGACION ----------- */
+.navbar_cv ul li a {
+    text-decoration: none;
+    color: rgb(255, 0, 0);
+    font-family: Roboto, "sans-serif";
+    font-size: 1.2rem;
+}
+
+.navbar_cv ul li::before {
+    content: "";
+    height: 3px;
+    width: 0%;
+    background: rgb(255, 0, 0);
+    position: absolute;
+    left: 0;
+    bottom: -12px;
+    transition: 0.4s ease-out;
+}
+
+.container_cv {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.navbar_cv {
+    width: 80%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo_cv {
+    width: 130px;
+    cursor: pointer;
+}
+
+.navbar_cv ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+
+}
+
+.navbar_cv ul li:hover::before {
+    width: 100%;
+}
+
+/*----------- CONTACTO ----------- */
+/*----------- CONTACTO ----------- */
+
+/*----------- BOTON ENVIAR ----------- */
+.btn_contacto {
+    text-decoration:none;
+    font-weight: 600;
+    font-size: 20px;
+    color:#ffffff;
+    padding-top:5px;
+    padding-bottom:5px;
+    padding-left:15px;
+    padding-right:15px;
+    background-color:#9d5450;
+    border-color: #ffffff;
+    border-width: 3px;
+    border-style: solid;
+    border-radius:none;
+    }
+
+
+/*----------- FORM ----------- */
+/*----------- FORM ----------- */
+
+
+
+
+    
+
+
+
+/*----------- PRUEBAS ----------- */
+/*----------- PRUEBAS ----------- */
+.div {
+    width: 300px;
+    border: 10px solid rgb(206, 113, 52);
+    padding: 50px;
+    margin: 20px;
+  }
+
+.div2 {
+    text-align: center;
+    text-justify: inter-word;
+  }
