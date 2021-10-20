@@ -6,6 +6,7 @@
 <link rel="shortcut icon" href="https://distincionpanaderia.com/wp-content/uploads/2018/09/icon-distincion-01-300x300.png">
 <meta charset="UTF-8">
 <link href="style.css" rel="stylesheet" type="text/css">
+
 </head>
 
 <body class="fondo_cv">
@@ -29,47 +30,49 @@
         </div>
 
             <div class="marcocv" style="color: rgb(255, 255, 255);">
-                <form action="form.html" class="center">
+                <form id="formulario" action="form.html" class="center" name="fvalida" onsubmit="return validar()">
                     <p><h1>CURRICULUM</h1></p>
 <br>
                     <p><strong>*Campos obligatorios*</strong></p>
 <br>
-                    <p>
+                    <div>
                         <label><strong>*</strong></label>
-                        <input type="text" name="" id="nomape" placeholder="Nombre y Apellido" required>
-                    </p>
+                        <input type="text" name="" id="nomape" placeholder="Nombre y Apellido">
+                    </div>
 <br>
-                    <p>
+                    <div>
                         <label><strong>*</strong></label>
-                        <input type="number" name="" id="dni" placeholder="Número de documento" required>
-                    </p>
+                        <input type="number" name="" id="dni" placeholder="Número de documento">
+                    </div>
 <br>
-                    <p>
+                    <div>
                         <label>Fecha de nacimiento</label>
                         <br>
                         <label><strong>*</strong></label>
-                        <input type="date" name="" id="fnaciomiento" required>
-                    </p>
+                        <input type="date" name="" id="fnacimiento" onchange="Anos();">
+                        <br>
+                        <input type="hidden" id="EDADA" readonly>
+                    </div>
 <br>
-                    <p>
+                    <div>
                         <label>Estado civil</label>
                         <br>
                         <label><strong>*</strong></label>
-                        <select name="estado" required>
-                                        <option value="Elegir" id="EO1">Elegir opción</option>
+                        <select name="estado" id="estado">
+                                        <option selected disabled value="Elegir">Elegir opción</option>
                                         <option value="Soltero/a">Soltero/a</option>
                                         <option value="Casado/a">Casado/a</option>
                                         <option value="Divorciado/a">Divorciado/a</option>
                                         <option value="Viudo/a">Viudo/a</option>
                         </select>
-                    </p>
+                    </div>
 <br>
-                    <p>
+                    <div>
                         <label>Nacionalidad</label>
                         <br>
                         <label><strong>*</strong></label>
-                        <select name="pais" required>
-                                        <option value="Elegir" id="EO2">Elegir opción</option>
+                        <select name="pais" id="pais">
+                                        <option selected disabled value="Elegir" id="EO2">Elegir opción</option>
                                         <option value="Afganistán" id="AF">Afganistán</option>
                                         <option value="Albania" id="AL">Albania</option>
                                         <option value="Alemania" id="DE">Alemania</option>
@@ -308,47 +311,47 @@
                                         <option value="Zambia" id="ZM">Zambia</option>
                                         <option value="Zimbabue" id="ZW">Zimbabue</option>
                         </select>
-                    </p>
+                    </div>
 <br>
-                    <p>
+                    <div>
                         <label><strong>*</strong></label>
-                        <input type="text" name="" id="dir" placeholder="Domicilio" required>
-                    </p>
+                        <input type="text" name="" id="direccion" placeholder="Domicilio">
+                    </div>
 <br>
-                    <p>
+                    <div>
                         <label><strong>*</strong></label>
-                        <input type="number" name="" id="tel1" placeholder="Teléfono" required>
-                    </p>
+                        <input type="number" name="" id="telefono" placeholder="Teléfono">
+                    </div>
 <br>
-                    <p>
+                    <div>
                         <label><strong>*</strong></label>
-                        <input type="text" name="" id="correoe" placeholder="Correo electrónico" required>
-                    </p>
+                        <input type="email" name="" id="correo" placeholder="Correo electrónico" pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}">
+                    </div>
 <br>
-                    <p>
+                    <div>
                         <label>Foto</label>
                         <br>
-                        <label><strong>*</strong></label>
-                        <input type="file" name="" id="foto" required>
-                    </p>
+                        <input type="file" name="" id="foto">
+                    </div>
 <br>
-                    <p>
+                    <div>
                         <label>Cargar su CV digital</label>
                         <br>
                         <input type="file" name="" id="cvdig">
-                    </p>
+                    </div>
 <br>
-                    <p>
+                    <div>
                         <label>Carta de presentación</label>
                         <br>
                         <label><strong>*</strong></label>
-                        <textarea name="" id="" cols="30" rows="10" required></textarea>
-                    </p>
+                        <textarea id="textarea" name="message" onkeyup="countChars(this);" cols="30" rows="10" maxlength="500"></textarea>
+                        <p id="charNum">0/500 caracteres.</p>
+                    </div>
 <br>
-                    <p>
+                    <div>
                         <input type="reset" value="Restaurar" class="btn_cv">
-                        <input type="submit" value="Enviar" id="btn" class="btn_cv">
-                    </p>
+                        <input type="submit" value="Enviar" id="button" class="btn_cv">
+                    </div>
                 </form>
             </div>
         </div>
@@ -358,5 +361,6 @@
           </div>
         
 </body>
+<script type="text/javascript" src="scripts.js"></script>
 
 </html>
